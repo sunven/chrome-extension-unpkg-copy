@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "chrome-extension-unpkg-copy",
+  "description": "chrome-extension-unpkg-copy",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.unpkg.com/browse/*"],
+      "js": ["js/content_script.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"]
+}
